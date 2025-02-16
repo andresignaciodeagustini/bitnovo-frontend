@@ -4,7 +4,7 @@ import type { Currency, PaymentForm, PaymentResponse } from '../types';
 
 
 const api = axios.create({
-  baseURL: 'http://localhost:4000/api',
+  baseURL: `${process.env.NEXT_PUBLIC_BASE_URL}/api`,  
   headers: {
     'Content-Type': 'multipart/form-data',
   }

@@ -1,4 +1,3 @@
-
 import { useRouter } from 'next/router';
 import SuccessModal from '../../components/SuccessModal';
 
@@ -10,7 +9,7 @@ const PaymentErrorPage: React.FC = () => {
   };
 
   const handleTryAgain = () => {
-    router.push(process.env.NEXT_PUBLIC_BASE_URL || '/');
+    router.push('/');  
   };
 
   return (

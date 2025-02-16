@@ -3,14 +3,13 @@ import SuccessModal from '../../components/SuccessModal/index';
 
 const PaymentSuccessPage: React.FC = () => {
   const router = useRouter();
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
 
   const handleClose = () => {
     router.push('/');
   };
 
   const handleContinue = () => {
-    window.location.href = baseUrl; 
+    router.push('/');  
   };
 
   return (
