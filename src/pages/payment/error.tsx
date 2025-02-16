@@ -10,7 +10,7 @@ const PaymentErrorPage: React.FC = () => {
   };
 
   const handleTryAgain = () => {
-    router.push('http://localhost:3000/'); 
+    router.push(process.env.NEXT_PUBLIC_BASE_URL || '/');
   };
 
   return (
