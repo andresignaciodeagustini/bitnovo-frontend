@@ -1,0 +1,205 @@
+.cryptoSelector {
+  position: relative;
+  width: 609px;
+  height: 56px;
+}
+
+.selectedOption {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 18px 16px;
+  gap: 8px;
+  width: 609px;
+  height: 56px;
+  background: #FFFFFF;
+  border: 1px solid #C0CCDA;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.selectedOption:hover:not(.disabled) {
+  border-color: #035AC5;
+}
+
+.disabled {
+  background: #F5F7FA;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.placeholder {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #647184;
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  width: 609px;
+  background: #FFFFFF;
+  border: 1px solid #C0CCDA;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  z-index: 1000;
+}
+
+.searchContainer {
+  padding: 12px 16px;
+  border-bottom: 1px solid #C0CCDA;
+}
+
+.searchInput {
+  width: 100%;
+  height: 40px;
+  padding: 8px 12px;
+  background: #FFFFFF;
+  border: 1px solid #C0CCDA;
+  border-radius: 6px;
+  font-family: 'Mulish';
+  font-size: 14px;
+  color: #002859;
+}
+
+.searchInput::placeholder {
+  color: #647184;
+}
+
+.optionsList {
+  max-height: 280px;
+  overflow-y: auto;
+  padding: 8px 0;
+}
+
+.cryptoOption {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 12px;
+  min-height: 56px;
+  cursor: pointer;
+}
+
+.cryptoOption:hover {
+  background: #F5F7FA;
+}
+
+.cryptoOption.selected {
+  background: #F5F7FA;
+}
+
+.cryptoLogo {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.cryptoInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cryptoName {
+  font-family: 'Mulish';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #002859;
+}
+
+.cryptoSymbol {
+  font-family: 'Mulish';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #647184;
+}
+
+.limits {
+  font-family: 'Mulish';
+  font-size: 12px;
+  line-height: 16px;
+  color: #647184;
+}
+
+.arrow {
+  margin-left: auto;
+  color: #647184;
+  transition: transform 0.2s ease;
+}
+
+.arrow.up {
+  transform: rotate(180deg);
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 609px;
+  height: 56px;
+  background: #FFFFFF;
+  border: 1px solid #C0CCDA;
+  border-radius: 6px;
+  color: #647184;
+  font-family: 'Mulish';
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #F5F7FA;
+  border-top-color: #035AC5;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-right: 8px;
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  width: 609px;
+  background: #FEE7E7;
+  border: 1px solid #D63939;
+  border-radius: 6px;
+  color: #D63939;
+  font-family: 'Mulish';
+}
+
+.errorIcon {
+  margin-right: 8px;
+}
+
+.retryButton {
+  margin-left: auto;
+  padding: 8px 16px;
+  background: #D63939;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Mulish';
+  font-weight: 600;
+}
+
+.noResults {
+  padding: 16px;
+  text-align: center;
+  color: #647184;
+  font-family: 'Mulish';
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

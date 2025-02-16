@@ -1,0 +1,116 @@
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modalContainer {
+    position: relative;
+    width: 490px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+  }
+  
+  .iconContainer {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .iconsuccess {
+    background: #DCFCE7;
+  }
+  
+  .iconerror {
+    background: #FEE2E2;
+  }
+  
+  .textContent {
+    text-align: center;
+  }
+  
+  .title {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #002859;
+    margin-bottom: 16px;
+  }
+  
+  .message {
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #647184;
+  }
+  
+  .continueButton {
+    width: 100%;
+    padding: 18px 24px;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .buttonsuccess {
+    background: #035AC5;
+  }
+  
+  .buttonsuccess:hover {
+    background: #024da8;
+  }
+  
+  .buttonerror {
+    background: #DC2626;
+  }
+  
+  .buttonerror:hover {
+    background: #B91C1C;
+  }
+  
+  @media (max-width: 768px) {
+    .modalContainer {
+      width: 90%;
+      margin: 20px;
+    }
+  }

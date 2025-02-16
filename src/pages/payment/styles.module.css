@@ -1,0 +1,222 @@
+
+
+.paymentContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  gap: 32px;
+  position: absolute;
+  width: 1198px;
+  height: 579px;
+  left: 157px;
+  top: calc(50% - 579px/2 - 0.5px);
+}
+
+.summarySection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 24px;
+  width: 583px;
+  height: 418px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.sectionTitle {
+  width: 334px;
+  height: 24px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 125%;
+  color: #002859;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.summaryInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  gap: 10px;
+  width: 583px;
+  height: 370px;
+  background: #F9FAFC;
+  border-radius: 16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.summaryItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #C0CCDA;
+}
+
+.summaryItem span:first-child {
+  font-family: 'Mulish';
+  font-weight: 700;
+  font-size: 16px;
+  color: #002859;
+}
+
+.summaryItem span:last-child {
+  font-family: 'Mulish';
+  font-weight: 600;
+  font-size: 16px;
+  color: #002859;
+  text-align: right;
+}
+
+.paymentSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 24px;
+  width: 583px;
+  height: 579px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.timer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 4px;
+  margin: 0 auto;
+  width: 519px;
+  height: 24px;
+}
+
+.timer span {
+  font-family: 'Mulish';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #002859;
+}
+
+.paymentOptions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 16px;
+  margin: 0 auto;
+  width: 519px;
+  height: 38px;
+}
+
+.optionButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 4px;
+  height: 32px;
+  background: #035AC5;
+  border-radius: 100px;
+  border: none;
+  color: #FFFFFF;
+  font-family: 'Mulish';
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.optionButton:last-child {
+  background: #F9FAFC;
+  color: #647184;
+}
+
+.qrCode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 193px;
+  height: 193px;
+  background: #FFFFFF;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+
+.paymentDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 12px;
+  margin: 0 auto;
+  width: 416px;
+}
+
+.detailItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+  width: 100%;
+}
+
+.copyWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.copyButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.copyButton.copied {
+  color: #0465DD;
+}
+
+.loadingContainer,
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 16px;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #035AC5;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
